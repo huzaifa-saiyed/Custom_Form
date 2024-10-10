@@ -1,0 +1,24 @@
+<?php 
+$data = $block->getBusinessData();
+?>
+<?php if($data): ?>
+    <div class="block block-order-details-view">
+        <div class="block-content">
+            <div class="box">
+                <strong class="box-title"><span><?php /* @escapeNotVerified */ echo __('Extra information') ?></span></strong>
+                <div class="box-content">
+                    <strong><?php /* @escapeNotVerified */ echo __('Years in Business') ?>:</strong>
+                    <?php echo $data['how_many_years_business']; ?><br>
+                    <strong><?php /* @escapeNotVerified */ echo __('How Did You Hear About Us') ?>:</strong>
+                    <?php echo $data['how_did_you_hear_about_us']; ?><br>
+                    <strong><?php /* @escapeNotVerified */ echo __('Sales Rep Name') ?>:</strong>
+                    <?php echo $data['sales_rep_name']; ?><br>
+                    <strong><?php /* @escapeNotVerified */ echo __('Has Showroom') ?>:</strong>
+                    <?php echo $data['has_showroom'] ? __('Yes') : __('No'); ?><br>
+                    <strong><?php /* @escapeNotVerified */ echo __('Has Sales Rep') ?>:</strong>
+                    <?php echo $data['has_sales_rep'] ? __('Yes') : __('No'); ?>
+                </div>
+            </div> 
+        </div>
+    </div>
+<?php endif; ?>

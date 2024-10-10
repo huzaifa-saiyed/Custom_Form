@@ -1,0 +1,10 @@
+<?php $data = $block->getCustomData(); ?> 
+
+<div class="admin-order-custom-data">
+    <h2><?php echo __('Order Extra Information'); ?></h2>
+    <p><strong><?php echo __('Years in Business:'); ?></strong> <?php echo $data['how_many_years_business']; ?></p>
+    <p><strong><?php echo __('How Did You Hear About Us:'); ?></strong> <?php echo $data['how_did_you_hear_about_us']; ?></p>
+    <p><strong><?php echo __('Sales Rep Name:'); ?></strong> <?php echo $data['sales_rep_name']; ?></p>
+    <p><strong><?php echo __('Has Showroom:'); ?></strong> <?php echo $data['has_showroom'] ? __('Yes') : __('No'); ?></p>
+    <p><strong><?php echo __('Has Sales Rep:'); ?></strong> <?php echo $data['has_sales_rep'] ? __('Yes') : __('No'); ?></p>
+</div>

@@ -1,0 +1,49 @@
+<!--The 'step_code' value from the .js file should be used-->
+<li id="step_code" data-bind="fadeVisible: isVisible">
+    <div class="step-title" data-bind="i18n: 'Additional Information'" data-role="title"></div>
+    <div id="checkout-step-title"
+         class="step-content"
+         data-role="content">
+
+        <form data-bind="submit: navigateToNextStep" novalidate="novalidate">
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <form id="custom-form">
+                        <label for="how_many_years_business">How many years in business:</label>
+                        <input type="text" class="form-control" name="how_many_years_business" id="how_many_years_business" required>
+                
+                        <label for="how_did_you_hear_about_us">How did you hear about us:</label>
+                        <input type="text" class="form-control" name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" required>
+                
+                        <label for="has_showroom">Do You Have Showroom?</label>
+                        <select name="has_showroom" class="form-control" id="has_showroom" required>
+                            <option value="">Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                
+                        <label for="has_sales_rep">Are you already working with a Sales Rep?</label>
+                        <select name="has_sales_rep" class="form-control" id="has_sales_rep" required>
+                            <option value="">Select</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                
+                        <label for="sales_rep_name">Associated Sales Rep Name:</label>
+                        <input type="text" class="form-control" name="sales_rep_name" id="sales_rep_name" required>
+                
+                        <span class="error-message" id="form-error-message" style="color: red;"></span> 
+                        
+                        <div class="actions-toolbar" id="shipping-method-buttons-container">
+                            <div class="primary">
+                                <button data-role="opc-continue" type="submit" class="button action continue primary">
+                                    <span translate="'Next'"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+</li>

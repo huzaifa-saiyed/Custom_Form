@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:DataObject/etc/fieldset.xsd">
+  <scope id="global">
+    <fieldset id="sales_convert_quote">
+      <field name="how_many_years_business">
+        <aspect name="to_order" />
+      </field>
+      <field name="how_did_you_hear_about_us">
+        <aspect name="to_order" />
+      </field>
+      <field name="has_showroom">
+        <aspect name="to_order" />
+      </field>
+      <field name="has_sales_rep">
+        <aspect name="to_order" />
+      </field>
+      <field name="sales_rep_name">
+        <aspect name="to_order" />
+      </field>
+    </fieldset>
+  </scope>
+</config>
